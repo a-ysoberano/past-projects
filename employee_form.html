@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Employee Registration Form</title>
+</head>
+<body>
+    <h1>Employee Registration Form</h1>
+    <form action="https://example.com/">
+        <p>
+            Full Name: <input type="text" name="full_name" required> <br><br>
+            Age: <input type="number" name="age" required><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required> Male
+            <input type="radio" id="female" name="gender" value="Female" required> Female
+            <input type="radio" id="other" name="gender" value="Other" required> Other<br><br>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="HR">Human Resources</option>
+                <option value="IT">IT</option>
+                <option value="Finance">Finance</option>
+                <option value="Sales">Sales</option>
+            </select><br><br>
+
+            Email Address: <input type="email" name="email" required><br><br>
+            Phone Number: <input type="tel" name="phone" pattern="[0-9]{11}" title="Please enter an 11-digit phone number without spaces or special characters." required><br><br>
+
+            <button type="submit">Register</button>
+        </p>
+    </form>
+</body>
+</html>
